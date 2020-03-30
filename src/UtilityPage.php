@@ -35,9 +35,12 @@ class UtilityPage extends ErrorPage
 
 	private static $has_many = array();
 
+
 	private static $defaults = array(
 		'ErrorCode' => '503'
+
 	);
+
 
 	/**
 	 * @param  Member    $member
@@ -84,12 +87,10 @@ class UtilityPage extends ErrorPage
 					'Title'      => _t('MaintenanceMode.TITLE', 'Undergoing Scheduled Maintenance'),
 					'URLSegment' => _t('MaintenanceMode.URLSEGMENT', 'offline'),
 					'MenuTitle'  => _t('MaintenanceMode.MENUTITLE', 'Utility Page'),
-					'Content'    => _t('MaintenanceMode.CONTENT', '<h1>We&rsquo;ll be back soon!</h1>'
-.'<p>Sorry for the inconvenience but '
-.'our site is currently down for scheduled maintenance. '
-.'If you need to you can always <a href="mailto:#">contact us</a>, '
-.'otherwise we&rsquo;ll be back online shortly!</p>'
-.'<p>&mdash; The Team</p>'),
+					'Content'    => _t('MaintenanceMode.CONTENT', 	'<p style="text-align: center;"></p>
+<p style="text-align: center;"><img class="leftAlone" title="" src="https://studentlife.uiowa.edu/assets/Uploads/DomeWordPrimary.png" alt="DomeWordPrimary BLACK" width="200" height="183" /></p>
+<p style="text-align: center;"></p>
+<p style="text-align: center;">Under construction: this website will be updated soon.</p>'),
 					'ParentID'   => 0
 				));
 				$page->write();
